@@ -10,6 +10,7 @@ def rand_ratio():
 fake = Faker("pt-BR")
 # print(signature(fake.random_number))
 
+
 def make_recipe():
     return {
         'id': fake.random_number(digits=2, fix_len=True),
@@ -29,9 +30,10 @@ def make_recipe():
             'name': fake.word()
         },
         'cover': {
-            'url': 'https://source.unsplash.com/random/%sx%s/?food,cook' % rand_ratio(),
+            'url': 'https://source.unsplash.com/random/%sx%s/?food,cook' % rand_ratio(),  
         }
     }
+
 
 if __name__ == '__main__':
     from pprint import pprint
