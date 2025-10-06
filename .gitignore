@@ -109,7 +109,7 @@ env
 .DS_Store
 local_settings.py 
 _local_settings.py 
-static/
+# static/ calma la também ner
 
 # add again for course porpuse
 !db.sqlite3
